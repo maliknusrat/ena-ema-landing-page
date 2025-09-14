@@ -1,0 +1,57 @@
+import Image from "next/image";
+import React from "react";
+
+export default function Footer() {
+  return (
+    <footer className="w-full h-[164px] bg-[#1FFFA5] flex items-center ">
+      {/* Desktop view */}
+      <div className="hidden md:flex max-w-6xl mx-auto items-center justify-between w-full px-4">
+        {/* Logo */}
+        <div>
+          <Image src="/Images/Logo.png" alt="logo" width={150} height={50} />
+        </div>
+
+        {/* Copyright */}
+        <div>
+          <p className="text-[#0A0F0D] text-sm font-[GeneralSansRegular]">
+            © All rights reserved to Ena Ema Technologies
+          </p>
+        </div>
+
+        {/* Social Icons */}
+        <div className="flex items-center gap-4">
+          <Image src="/icons/mingcute_linkedin-line.png" alt="linkedin" width={18} height={18} />
+          <Image src="/icons/qlementine-icons_facebook-16.png" alt="facebook" width={18} height={18} />
+          <Image src="/icons/lets-icons_insta.png" alt="instagram" width={18} height={18} />
+          <Image src="/icons/ri_behance-fill.png" alt="behance" width={18} height={18} />
+          <Image src="/icons/icon-park-outline_dribble.png" alt="dribbble" width={18} height={18} />
+        </div>
+      </div>
+
+      {/* Mobile view */}
+      <div className="flex md:hidden  items-start justify-between w-full px-4">
+        {/* Logo */}
+        <div>
+          <Image src="/Images/Logo.png" alt="logo" width={120} height={40} />
+        </div>
+
+        {/* Right side (Copyright + Social Icons) */}
+        <div className="w-1/2 flex flex-col items-end">
+          {/* Copyright */}
+          <p className="text-[#0A0F0D] text-xs text-right font-[GeneralSansRegular] mb-2">
+            © All rights reserved to Ena Ema Technologies
+          </p>
+
+          {/* Social Icons */}
+          <div className="flex items-center gap-3">
+            <Image src="/icons/mingcute_linkedin-line.png" alt="linkedin" width={16} height={16} />
+            <Image src="/icons/qlementine-icons_facebook-16.png" alt="facebook" width={16} height={16} />
+            <Image src="/icons/lets-icons_insta.png" alt="instagram" width={16} height={16} />
+            <Image src="/icons/ri_behance-fill.png" alt="behance" width={16} height={16} />
+            <Image src="/icons/icon-park-outline_dribble.png" alt="dribbble" width={16} height={16} />
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
