@@ -11,7 +11,7 @@ export default function Navbar() {
         height={0}
         className="absolute top-0 left-1/2 -translate-x-1/2 z-20"
       />
-      {/* Logo centered */}
+     
       <div
         className=" flex items-center justify-center
                mb-6"

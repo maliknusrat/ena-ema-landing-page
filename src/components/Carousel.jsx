@@ -6,9 +6,8 @@ export default function CarouselOne() {
   return (
     <div className="w-full mb-10 bg-transparent">
       <Marquee
-        gradient={false} // removes default gradient background
-        speed={100} // control scrolling speed
-        pauseOnHover={true} // optional
+        speed={100} 
+        pauseOnHover={true}
         className="flex items-center"
       >
         {[
