@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 function TestimonialCard({ name, role, text, image, stars = 5 }) {
   return (
     <div className="w-[314px] mx-2 h-[262px] bg-[#192420] rounded-lg p-6 flex flex-col justify-between">
-      {/* Stars */}
+ 
       <div className="flex space-x-1">
         {Array.from({ length: stars }).map((_, i) => (
           <svg

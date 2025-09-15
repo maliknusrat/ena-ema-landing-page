@@ -17,21 +17,21 @@ export default function Banner() {
           </div>
 
           <motion.h1
-      className="text-[36px] md:text-[64px] lg:text-[68px] font-bold text-white leading-tight"
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, ease: "easeOut" }}
-    >
-      Strategic Landing Pages That Convert From Just{" "}
-      <motion.span
-        className="text-[#1FFFA5]"
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 0.5, delay: 1 }}
-      >
-        $200
-      </motion.span>
-    </motion.h1>
+            className="text-[36px] md:text-[64px] lg:text-[68px] font-bold text-white leading-tight"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
+            Strategic Landing Pages That Convert From Just{" "}
+            <motion.span
+              className="text-[#1FFFA5]"
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.5, delay: 1 }}
+            >
+              $200
+            </motion.span>
+          </motion.h1>
 
           <p className="text-gray-400 mt-4 text-base md:text-lg">
             Stop wasting traffic on generic pages. We deliver premium,
