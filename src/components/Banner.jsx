@@ -1,9 +1,9 @@
+"use client";
 import React from "react";
-import Image from "next/image";
 import TrustedBadge from "./TrustedBadge";
 import Navbar from "./Navbar";
-import Form from "./Form";
 import FootBanner from "./FootBanner";
+import { motion } from "framer-motion";
 
 export default function Banner() {
   return (
@@ -16,12 +16,23 @@ export default function Banner() {
             <TrustedBadge />
           </div>
 
-          <h1 className="text-[36px]  md:text-[64px] lg:text-[68px] font-bold text-white leading-tight">
-            Strategic Landing Pages That Convert From Just{" "}
-            <span className="text-[#1FFFA5]">$200</span>
-          </h1>
+          <motion.h1
+      className="text-[36px] md:text-[64px] lg:text-[68px] font-bold text-white leading-tight"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+    >
+      Strategic Landing Pages That Convert From Just{" "}
+      <motion.span
+        className="text-[#1FFFA5]"
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 0.5, delay: 1 }}
+      >
+        $200
+      </motion.span>
+    </motion.h1>
 
-          {/* Subtitle */}
           <p className="text-gray-400 mt-4 text-base md:text-lg">
             Stop wasting traffic on generic pages. We deliver premium,
             conversion-focused landing pages designed, developed, and launched

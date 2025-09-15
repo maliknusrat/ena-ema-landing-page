@@ -1,6 +1,7 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { FaCheck } from "react-icons/fa6";
+import MobileViewCase from "./MobileViewCase";
 
 export default function CaseStudies() {
   return (
@@ -14,8 +15,11 @@ export default function CaseStudies() {
         </p>
       </div>
 
-      {/* Marquee */}
-      <Marquee speed={100} pauseOnHover={true} className="flex items-center my-10">
+    <div className="hidden md:block"> <Marquee
+        speed={100}
+        pauseOnHover={true}
+        className=" flex items-center my-10"
+      >
         {/* Card 1 */}
         <div className="bg-[#151E1B] mx-2 border-2 rounded-xl border-[#2A3C36] md:w-[583px] md:h-[504px] transition-all duration-300 ease-out hover:border-[#1FFFA5] hover:bg-[radial-gradient(51.72%_51.72%_at_50%_92.16%,rgba(31,255,165,0.2)_0%,rgba(31,255,165,0.02)_100%),linear-gradient(0deg,#192420,#192420)]">
           <img
@@ -140,20 +144,27 @@ export default function CaseStudies() {
             </div>
           </div>
         </div>
-      </Marquee>
+      </Marquee></div>
+
+     <div className="block md:hidden my-10 px-1">  <MobileViewCase></MobileViewCase></div>
+     
+
+
 
       {/* button */}
-     <div className="flex items-center justify-center"> <button
-  type="submit"
-  className=" px-8 py-4 bg-[#1FFFA5] text-[#0A0F0D] font-semibold rounded-lg 
+      <div className="flex items-center justify-center">
+        {" "}
+        <button
+          type="submit"
+          className=" px-8 py-4 bg-[#1FFFA5] text-[#0A0F0D] font-semibold rounded-lg 
              shadow-[0px_9px_24px_0px_#1FFFA540,0px_7px_8px_0px_#FFFFFF80_inset] 
              transition-all duration-200 ease-in-out
              hover:bg-[#17d78a] 
              hover:shadow-[0px_7px_8px_0px_#FFFFFF80_inset,0px_9px_24px_0px_#1FFFA540]"
->
-  I want similar results →
-</button>
-</div>
+        >
+          I want similar results →
+        </button>
+      </div>
     </div>
   );
 }
